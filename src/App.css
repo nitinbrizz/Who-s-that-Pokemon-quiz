@@ -1,38 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .App {
+  /* background-image: url("./img/pika.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+  /* width: 100vw;
+  height: 100vh;
+  position: relative; */
+}
+
+img {
+  width: 400px;
+}
+.mainDiv {
+  background-image: url("./img/poke2.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.imgdiv {
+  position: absolute;
+  top: 17%;
+  left: 12%;
+}
+.secondDiv {
+  position: absolute;
+  top: 28%;
+  right: 20%;
+  height: 250px;
+}
+.optionDiv {
+  margin: 10px 0;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  border: 5px solid black;
+  color: black;
+  background: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.optionDiv * {
+  margin-top: 4%;
+}
+.match {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  border-radius: 10px;
+  color: aliceblue;
+}
+.match h1 {
+  margin: 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrong {
+  width: 200px;
+  height: 70px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrong * {
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.next {
+  width: 200px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 5px;
+  color: blue;
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.next h3 {
+  margin: 4px;
+}
+.thirdDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  height: 250px;
 }
-
-.App-link {
-  color: #61dafb;
+.fourthDiv {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-size: 30px;
+  position: absolute;
+  bottom: 5%;
+  left: 8%;
+}
+.pokeballImg {
+  width: 50px;
+  height: 50px;
+}
+.gameoverScreen {
+}
+.gameoverScreen img {
+  width: 500px;
+  height: auto;
+  border: 5px solid #000;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.gameoverScreen button {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  width: 300px;
+  height: 100px;
+  font-size: xx-large;
+  background: yellow;
+  border-radius: 5px;
 }
