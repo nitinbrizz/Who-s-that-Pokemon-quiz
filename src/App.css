@@ -31,13 +31,16 @@ img {
   top: 28%;
   right: 20%;
   height: 250px;
+  width: 250px;
+  /* border: 1px solid black; */
 }
 .optionDiv {
   margin: 10px 0;
   width: 250px;
   height: 40px;
-  text-align: center;
-  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
   color: black;
   background: yellow;
   cursor: pointer;
@@ -60,7 +63,7 @@ img {
 .wrong {
   width: 200px;
   height: 70px;
-  background-color: blueviolet;
+  background-color: red;;
   border-radius: 5px;
   color: white;
   text-align: center;
@@ -75,7 +78,7 @@ img {
   height: 30px;
   background-color: yellow;
   border-radius: 5px;
-  color: blue;
+  color: black;
   text-align: center;
   margin: 10px 0;
   cursor: pointer;
@@ -97,6 +100,10 @@ img {
   bottom: 5%;
   right: 10%;
 }
+.fourthDiv *{
+  color: yellow;
+  text-shadow: 5px;
+}
 .title {
   font-size: 30px;
   position: absolute;
@@ -108,22 +115,90 @@ img {
   height: 50px;
 }
 .gameoverScreen {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  height: 70vh;
+  /* border: 1px solid #000; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .gameoverScreen img {
-  width: 500px;
+  width: 50%;
   height: auto;
   border: 5px solid #000;
-  position: absolute;
-  top: 15%;
-  left: 10%;
 }
 .gameoverScreen button {
-  position: absolute;
-  top: 40%;
-  right: 10%;
-  width: 300px;
-  height: 100px;
+  width: 30%;
+  height: 50px;
   font-size: xx-large;
   background: yellow;
   border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .mainDiv {
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: 10%;
+  }
+  .secondDiv{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+  }
+  .optionDiv{
+    width: 100%;
+    border: 2px solid black;
+    /* background-color: red; */
+    margin: 10px 0;
+    /* width: 250px;
+    height: 40px; */
+    background: yellow;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 99;
+
+  }
+  .thirdDiv{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid rgb(233, 221, 221); */
+    width: 50%;
+    height: 20vh;
+  }
+  .thirdDiv > *{
+    width: 100%;
+  }
+  .fourthDiv {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 10px;
+  }
+  .fourthDiv > div >img{
+    width: 25px;
+    height: 25px;
+  }
+  .gameoverScreen{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .gameoverScreen > img{
+    width: 100%;
+  }
+  .gameoverScreen button{
+    width: 50%;
+  }
 }

@@ -105,10 +105,10 @@ function App() {
                 
                 
                 <div className="secondDiv">
-                {showOptions && pokeArrayNames.map((x,index)=>{
-                  return(
-                  <div className="optionDiv" onClick={()=>clickHandler(x[0],index)}><h3>{x[1].toUpperCase()}</h3></div>)
-                })}
+                  {showOptions && pokeArrayNames.map((x,index)=>{
+                    return(
+                    <button className="optionDiv" onClick={()=>clickHandler(x[0],index)}><h3>{x[1].toUpperCase()}</h3></button>)
+                  })}
                 </div>
 
                 <div className="thirdDiv">
@@ -118,8 +118,8 @@ function App() {
                 </div>
                 
                 <div className="fourthDiv">
-                  <h1>Score:{Score}</h1>
-                  <div style={{display:"flex"}}><h1>Lives:</h1>{lives.map((x)=><img id={x} className="pokeballImg" src={pokeball} alt="" />)}</div>
+                  <h1>score:{Score}</h1>
+                  <div style={{display:"flex"}}><h1>lives:</h1>{lives.map((x)=><img id={x} className="pokeballImg" src={pokeball} alt="" />)}</div>
                   
                 </div>
                 </div>}
