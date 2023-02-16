@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Who-s-that-pokemon-Quiz/static/css/main.cc3bca0d.css",
+    "main.js": "/Who-s-that-pokemon-Quiz/static/js/main.5499fcc8.js",
+    "static/js/787.f055211e.chunk.js": "/Who-s-that-pokemon-Quiz/static/js/787.f055211e.chunk.js",
+    "static/media/poke2.jpg": "/Who-s-that-pokemon-Quiz/static/media/poke2.cf40620da44e7dbf6059.jpg",
+    "static/media/gameover.jpg": "/Who-s-that-pokemon-Quiz/static/media/gameover.6284ef7654a1ff6fe497.jpg",
+    "static/media/ball.png": "/Who-s-that-pokemon-Quiz/static/media/ball.3c176fc18a0206f853f0.png",
+    "index.html": "/Who-s-that-pokemon-Quiz/index.html",
+    "main.cc3bca0d.css.map": "/Who-s-that-pokemon-Quiz/static/css/main.cc3bca0d.css.map",
+    "main.5499fcc8.js.map": "/Who-s-that-pokemon-Quiz/static/js/main.5499fcc8.js.map",
+    "787.f055211e.chunk.js.map": "/Who-s-that-pokemon-Quiz/static/js/787.f055211e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc3bca0d.css",
+    "static/js/main.5499fcc8.js"
+  ]
+}
